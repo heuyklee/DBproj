@@ -33,7 +33,7 @@ app.get('/', function (req, res) {
 //});
 
 //--------------------------------------------------------------
-var token = "EAAG4e1yoZCJ0BAA9uuE1LNrZCeWDJbA0DaNLHbA6NesRmiaPPr2uzsl3nLtsOHVQZBcxXC0lFu6yOzHXIPgdYrRLrWdotmiBsbNWHBCmOTJJtGnvQbcMrZBdZC4CLiBkRGjJdnJoJRCjwQNTTeSLjcZCjA6XKUdRcnuYcmCXehdAZDZD";
+var token = fs.readFileSync('/home/ec2-user/facebook/token.txt');
 var request = require('request')
 
 app.post('/webhook/', function (req, res) {
